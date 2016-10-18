@@ -5,61 +5,34 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Flashcards</title>
+    <title>Talk to the web page</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>My Programming Flashcard</h1>
+        <h1>Talk to the web page</h1>
+        <p>Click a button to say something to the web page. See what it says back!</p>
       </div>
-      <blockquote class="bg-info">
-        <p>
-        <span class="clickable1">Javascript</span>
-        <span class="clickable2">An object-oriented computer programming language commonly used to create interactive effects within web browsers.</span>
-        </p>
-      </blockquote>
-      <blockquote class="bg-success">
-        <p>
-        <span class="clickable1">Chained method</span>
-        <span class="clickable2">Also known as named parameter idiom, is a common syntax for invoking multiple method calls in object-oriented programming languages. Each method returns an object, allowing the calls to be chained together in a single statement without requiring variables to store the intermediate results.</span>
-        </p>
-      </blockquote>
-      <blockquote class="bg-info">
-        <p>
-        <span class="clickable1">Operators</span>
-        <span class="clickable2">Are symbols that are used to perform an operation. Most often these operations are arithmetic (addition, subtraction, etc), but not always.</span>
-        </p>
-      </blockquote>
-      <blockquote class="bg-success">
-        <p>
-        <span class="clickable1">Variables</span>
-        <span class="clickable2">Variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container. Before you use a variable in a JavaScript program, you must declare it.</span>
-        </p>
-      </blockquote>
-      <blockquote class="bg-info">
-        <p>
-        <span class="clickable1">Functions</span>
-        <span class="clickable2">A named section of a program that performs a specific task. In this sense, a function is a type of procedure or routine. Some programming languages make a distinction between a function, which returns a value, and a procedure, which performs some operation but does not return a value.</span>
-        </p>
-      </blockquote>
-      <blockquote class="bg-success">
-        <p>
-        <span class="clickable1">Methods</span>
-        <span class="clickable2">A method in object-oriented programming (OOP) is a procedure associated with a message and an object. An object is made up of data and behavior, which form the interface that an object presents to the outside world. Data is represented as properties of the object and behavior as methods.</span>
-        </p>
-      </blockquote>
-      <blockquote class="bg-info">
-        <p>
-        <span class="clickable1">Booleans</span>
-        <span class="clickable2">Is a data type, having two values (usually denoted true and false), intended to represent the truth values of logic and Boolean algebra. It is named after George Boole, who first defined an algebraic system of logic in the mid 19th century.</span>
-        </p>
-      </blockquote>
-      <blockquote class="bg-info">
-        <p>
-        <span class="clickable1">NaN</span>
-        <span class="clickable2">In computing, NaN, standing for not a number, is a numeric data type value representing an undefined or unrepresentable value, especially in floating-point calculations.</span>
-        </p>
-      </blockquote>
+      <div class="row">
+      <button class="btn btn-primary" id="hello">Say "hello"</button>
+      <button class="btn btn-warning" id="goodbye">Say "goodbye"</button>
+      <button class="btn btn-danger" id="stop">Say "stop copying me!"</button>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>You said:</h2>
+            <ul id="user">
+
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <h2>The web page said back:</h2>
+            <ul id="webpage">
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

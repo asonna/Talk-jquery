@@ -30,17 +30,22 @@ blockquote:hover{
   text-align: center;
   font-family: Rammetto One, cursive;
   color: #1a75ff;
-  background-image: url("../img/background2.jpg");
+  background-image: url("../img/background.jpg");
   background-size: cover;
 }
 
 body {
-  background-image: url("../img/background1.jpg");
+  background-image: url("../img/background3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: #441B10;
 
 /*background: -moz-linear-gradient(top, rgba(30,87,153,1) 1%, rgba(124,184,231,0.2) 99%, rgba(125,185,232,0.2) 100%);
 background: -webkit-linear-gradient(top, rgba(30,87,153,1) 1%,rgba(124,184,231,0.2) 99%,rgba(125,185,232,0.2) 100%);
 background: linear-gradient(to bottom, rgba(30,87,153,1) 1%,rgba(124,184,231,0.2) 99%,rgba(125,185,232,0.2) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#337db9e8',GradientType=0 );*/
+}
+
+.row {
+  background-color: #EADFDC;
 }
